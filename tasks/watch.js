@@ -5,7 +5,7 @@ module.exports = function watching() {
   watch("src/**/*.php", parallel("php"));
   watch("src/scss/**/*.scss", parallel("style"));
   watch("src/components/**/*.scss", parallel("style"));
-  watch("src/components/**/*.js", parallel("dev_js"));
+  watch("src/components/**/*.js", parallel("components_js"));
   watch("src/js/**/*.js", parallel("dev_js"));
   watch("src/assets/**/*.json", parallel("html"));
   watch("src/assets/img/**/*.+(png|jpg|jpeg|gif|svg|ico)", parallel("rastr"));
